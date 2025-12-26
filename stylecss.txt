@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+/* SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
+}
+
+/* FIX FOR FIXED HEADER */
+section {
+    scroll-margin-top: 100px;
+}
+
+/* BASE */
+body {
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+/* HEADER */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 18px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(248,250,252,0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #e5e7eb;
+    z-index: 1000;
+}
+
+.brand {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.header nav a {
+    margin-left: 28px;
+    text-decoration: none;
+    color: #475569;
+    font-weight: 500;
+}
+
+.header nav a:hover {
+    color: #0f172a;
+}
+
+/* HOME */
+.home {
+    height: 100vh;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(180deg, #ffffff, #f1f5f9);
+}
+
+.home h1 {
+    font-size: 3.2rem;
+    margin-bottom: 12px;
+}
+
+.home p {
+    font-size: 1.1rem;
+    color: #475569;
+}
+
+/* PROJECTS */
+.projects {
+    padding: 110px 20px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.projects h2 {
+    font-size: 2.4rem;
+    margin-bottom: 60px;
+}
+
+.project-list {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.project {
+    padding: 28px;
+    border-radius: 14px;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+/* CONTACT */
+.contact {
+    padding: 110px 20px;
+    background: #0f172a;
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+.contact form {
+    max-width: 420px;
+    margin: auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    background: #020617;
+    color: white;
+}
+
+.contact button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border-radius: 30px;
+    border: none;
+    background: #3b82f6;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: #2563eb;
+}
+
+/* FOOTER */
+footer {
+    padding: 15px;
+    text-align: center;
+    background: #020617;
+    color: #94a3b8;
+}
